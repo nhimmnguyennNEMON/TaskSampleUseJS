@@ -5,7 +5,7 @@
 	left:0;
 	right:0;
 	bottom:0;
-	background-color:#ef6a8a; /* change if the mask should have another color then white */
+	background-color:#8ae8ff; /* change if the mask should have another color then white */
 	z-index:9999999; /* makes sure it stays on top */
 }
 
@@ -21,7 +21,7 @@
 }
 
 .spinner > div {
-	background-color: #fff;
+	background-color: #8ae8ff;
 	height: 100%;
 	width: 6px;
 	display: inline-block; 

@@ -22,20 +22,20 @@ function firstQuestion(){
     Swal.fire({
         title: CONFIG.introTitle,
         text: CONFIG.introDesc,
-        imageUrl: 'img/lookMe.jpg',
+        imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
         background: '#fff url("img/iput-bg.jpg")',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
-        $('.content').show(200);
+        $('.content').show(500);
       })
 }
 
  // switch button position
  function switchButton() {
-    var audio = new Audio('sound/duck.mp3');
+    var audio = new Audio('');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
@@ -103,12 +103,12 @@ $('#yes').click(function() {
         html: true,
         width: 900,
         padding: '3em',
-        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
+        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Lí do: '>",
         background: '#fff url("img/iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
-              url("img/giphy2.gif")
-              left top
+              url("")
+              top
               no-repeat
             `,
         confirmButtonColor: '#3085d6',
@@ -119,7 +119,7 @@ $('#yes').click(function() {
             Swal.fire({
                 width: 900,
                 confirmButtonText: CONFIG.btnAccept,
-                background: '#fff url("img/iput-bg.jpg")',
+                background: '#8ae8ff url("img/iput-bg.jpg")',
                 title: CONFIG.mess,
                 text: CONFIG.messDesc,
                 confirmButtonColor: '#83d0c9',
